@@ -17,7 +17,6 @@ for(int i = 0; i<a; i++){
 		}
 	}
 }
-
 printf("%d %d",arr[0], arr[a-1]);
 
 return 0;
