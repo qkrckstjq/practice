@@ -3,14 +3,15 @@
 int main() {
 	
 	int a = 0;
+
 	scanf("%d",&a);
 
-	int grade[a];
+	float grade[a];
 	
 	for(int i = 0; i<a; i++) {
-		scanf("%d",&grade[i]);
+		scanf("%f",&grade[i]);
 	}
-	int maxgrade = 0;
+	float maxgrade = 0;
 	float result = 0;
 
 	for(int i = 0; i<a; i++) {
@@ -21,10 +22,10 @@ int main() {
 
 
 	for(int i = 0 ; i<a; i++) {
-		result += ((grade[i] / maxgrade) * 100);
+		result = result + (grade[i]/maxgrade)*100;
 	}
 
-	printf("%f", result/a);
+	printf("%f", result/3);
 }
 
 
