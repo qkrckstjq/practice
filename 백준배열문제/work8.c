@@ -23,7 +23,6 @@ int main() {
 				num += start;								
 			} else if (arr[i][j] == 88) {
 				num = 0;
-				start = 0;
 			}
 			result[i] = num;
 		}
