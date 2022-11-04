@@ -25,7 +25,7 @@ int main() {
 		result = result + (grade[i]/maxgrade)*100;
 	}
 
-	printf("%f", result/3);
+	printf("%f.3", result/3);
 }
 
 
