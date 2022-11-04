@@ -30,7 +30,7 @@ int main() {
 	}
 	
 	for(int i = 0 ;i<a; i++) {
-		printf("%d",result[i]);
+		printf("%d\n",result[i]);
 	}
 	
 
