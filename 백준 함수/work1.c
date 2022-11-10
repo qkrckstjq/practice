@@ -25,7 +25,7 @@ while(b < size) {
 
         for(int i = 0 ; i < size; i++){
                 if(b == arr[i]) {
-                        arr[i] = 0;
+                        arr[i] = -1;
                 }
         }
 }
@@ -33,8 +33,8 @@ while(b < size) {
 int num = 0;
 
 while(num < size) {
-	if(arr[num] != 0) {
-		printf("%d",arr[num]);
+	if(arr[num] != -1) {
+		printf("%d\n",arr[num]);
 	}
     	
         num++;
