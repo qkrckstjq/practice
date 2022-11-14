@@ -8,11 +8,14 @@ int num = a;
 	if(num < 100) {
 		printf("%d",num);
 	} else if (num >= 100) {
+		num = 99;
 		int c = a;
 	for(int i = 100 ; i <= c; i++) {
-		int lg = num / 100;
-		int md = (num/10)%10;
-		int sm = num % 10;
+		int lg = i / 100;
+		int md = (i/10)%10;
+		int sm = i % 10;
+	
+	if((lg <= md && md <= sm)||(sm <=md && md <= lg) ) {
 		int sample1 = lg - md;
 		int sample2 = md - sm;
 		if(sample1 < 0) {
@@ -26,6 +29,7 @@ int num = a;
 			num += 1;	
 		}
 	
+		}
 	}
 		printf("%d",num);
 	}
