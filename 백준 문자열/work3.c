@@ -23,17 +23,16 @@ int main() {
 	}
 
 	
-	for(int i = 0; i<str_len; i++) {	
-		int num2 = 0;
-		while(alphabet[num2]) {
-			if(a[i] == alphabet[num2]) {
-				arr[num2] = i;
+	for(int i = 0; i<str_len+1; i++) {	
+		for(int j = 0; j < 27; j++) {
+			if(a[i] == alphabet[j]) {
+				arr[j] = i;
 			}
-			num2++;
 		}
 	}
 	
 	for(int i = 0; i<27; i++) {
 		printf("%d ",arr[i]);
-	}	
+	}
+
 }
