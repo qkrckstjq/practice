@@ -4,8 +4,8 @@ int main () {
 	int a =0;
 	scanf("%d",&a);
 
-	int arr[a]={0};
-	char str[a][21] = {0};
+	int arr[a];
+	char str[a][21];
 	
 	for(int i = 0; i < a; i++) {
 		scanf("%d",&arr[i]);
