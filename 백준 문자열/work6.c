@@ -35,5 +35,8 @@ int main() {
 	}
 
 
+
 	printf("%d", word);
+
+	//수정함
 }
