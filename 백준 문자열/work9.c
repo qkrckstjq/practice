@@ -3,7 +3,7 @@
 int main() {
 	char arr[9][5] = {"c=","c-","dz=","d-","lj","nj","s=","z="};
 
-	char a[] = "";
+	char a[100];
 
 	scanf("%s",a);
 
