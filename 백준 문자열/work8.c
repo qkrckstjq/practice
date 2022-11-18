@@ -3,7 +3,7 @@
 
 int main () {
 	
-	char a[]="";
+	char a[16];
 	scanf("%s",a);
 
 	int len = 0;
