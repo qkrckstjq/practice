@@ -31,19 +31,19 @@ int main () {
 				}
 			}
 		}
-		int bool = 1;
+		int f = 1;
 		int newlen = 0;
 		while(arr[newlen]) newlen++;
 		
 		for(int j = 0; j<=newlen; j++) {
 			for(int k = j+1; k<=newlen; k++) {
 				if(arr[j] == arr[k]) {
-					bool *= 0;
+					f *= 0;
 				}
 			}
 		}
 		
-		if(bool == 0) {
+		if(f == 0) {
 			ans-=1;
 		}		
 
