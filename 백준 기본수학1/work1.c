@@ -2,25 +2,26 @@
 
 
 int main () {
-	int a=0;
-	int b=0;
-	int c=0;
-	scanf("%d %d %d",&a,&b,&c);
+	long long a=0;
+	long long b=0;
+	long long c=0;
+	scanf("%lld %lld %lld",&a,&b,&c);
 	
-	int C = 0;
-	int D = 0;	
-	int d = 1;
-	while((a+D) > C) {
+	long long B = b;
+	long long C = c;	
+	long long d = 1;
+	while(1) {
 		if(c < b) {
 			d = -1;
 			break;
 		}
-		C=c*d;
-		D=b*d;
-		d++;
+		B=b*d;
+                C=c*d;		
+		if(a+B < C) break;
+		d+=1;
 	}
 
-	printf("%d",d);
+	printf("%lld",d);
 
 
 
