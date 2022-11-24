@@ -18,10 +18,10 @@ int main() {
 	}
 	int extra=0;
 	for(int i = (bigger-1); i>=0; i--) {
-		arr[i] = ((a[alen-1] - 48) + (b[blen-1] - 48)) % 10 + extra;
+		arr[i] = ((a[alen-1] - 48) + (b[blen-1] - 48) + extra) % 10;
 		
 		
-		extra = ((a[alen-1] - 48) + (b[blen-1] - 48)) / 10;
+		extra = ((a[alen-1] - 48) + (b[blen-1] - 48)+ extra) / 10;
 		if((alen-1) == 0) {
 			a[alen-1] = 48;
 		} else {
