@@ -2,7 +2,7 @@
 
 
 int main() {
-	char a[10001],b[10001];
+	char a[10002],b[10002];
 	scanf("%s %s",a,b);
 	int alen = 0, blen = 0, bigger = 0;
 	while(a[alen]) alen++;
